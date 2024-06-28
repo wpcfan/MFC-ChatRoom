@@ -87,8 +87,8 @@ void LoginDlg::DoDataExchange(CDataExchange* pDX)
 	// 创建协议地址族
 	SOCKADDR_IN addr={0}; 
 	addr.sin_family=AF_INET;//协议版本
-	addr.sin_addr.S_un.S_addr=inet_addr("192.168.2.55");
-	addr.sin_port=htons(8082);
+	addr.sin_addr.S_un.S_addr=inet_addr("127.0.0.1");
+	addr.sin_port=htons(9000);
 	//时间验证
 	/*CString date;
 	SYSTEMTIME st;
